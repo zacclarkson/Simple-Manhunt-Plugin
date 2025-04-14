@@ -1,0 +1,4 @@
+name: Manhunt
+version: '1.0-SNAPSHOT'
+main: com.clarkson.manhunt.Manhunt
+api-version: '1.21'
