@@ -2,3 +2,15 @@ name: Manhunt
 version: '1.0-SNAPSHOT'
 main: com.clarkson.manhunt.Manhunt
 api-version: '1.21'
+# Add the commands section
+commands:
+  manhunt:
+    description: Manages the Manhunt game roles.
+    usage: |-
+      /<command> hunter <player> - Set player as Hunter.
+      /<command> runner <player> - Set player as Runner.
+      /<command> clear <player> - Remove player's role.
+      /<command> clearall - Remove all roles.
+      /<command> list - List current Hunters and Runners.
+    permission: manhunt.admin # Require permission to use the command
+    aliases: [mh] # Optional shorter alias like /mh
